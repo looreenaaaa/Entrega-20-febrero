@@ -1,0 +1,20 @@
+#!/bin/bash
+
+menu() {
+	clear
+	echo "MENU PRINCIPAL"
+	echo "--------------"
+	echo "1. Crear directorio"
+	echo "2. Borrar directorio"
+	echo "3. Crear fichero"
+	echo " "
+}
+
+menu
+echo "Elegir opcion? "
+read opcion
+case $opcion in
+	1) echo "Introduzca directorio"; read directorio; mkdir $directorio  ;;
+	2) echo "Introduzca directorio a borrar"; read directorio; rmdir $directorio ;;
+	3) echo "Introduzca fichero a crear"; read fichero; touch $fichero ;;
+esac
