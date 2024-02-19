@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Script para crear ficheros y carpetas"
+echo "Directorio a crear? "
+read directorio
+mkdir $directorio
+echo "Fichero a crear? "
+read fichero
+touch $fichero
