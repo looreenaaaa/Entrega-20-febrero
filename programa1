@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Parametro 1: $1"
+echo "Parametro 2: $2"
+echo "Parametro 3: $3"
+
+echo "Vamos a crear un ficjero con el parametro 1"
+mkdir $1
+echo "Vamos a crear un fichero con el parametro 2"
+touch $2
